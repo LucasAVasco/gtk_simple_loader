@@ -5,7 +5,7 @@ authors = [
     { name="Lucas Vasco", email="lucasvascosc@gmail.com" },
 ]
 
-description = "Facilities to load GTK '.ui' files"
+description = "Facilities to load simple GTK '.ui' files"
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
