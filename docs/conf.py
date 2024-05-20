@@ -18,6 +18,10 @@ dev_mode = "DEV_MODE" in os.environ
 
 paths = [
     "../",
+    "../src/",  # Require to 'examples/' be able to import this package
+
+    # Need this line to Sphinx be able to import 'gi' module
+    "/usr/lib/python3/dist-packages/",
 ]
 
 for path in paths:
@@ -44,7 +48,7 @@ homepage = "https://github.com/LucasAVasco/gtk_simple_loader"
 # #region General configuration
 
 templates_path = ["_templates"]
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", ".venv", "venv"]
 
 rst_prolog = ""
 

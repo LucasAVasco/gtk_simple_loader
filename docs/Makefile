@@ -8,7 +8,7 @@
 
 
 SPHINX_BUILD_CMD = sphinx-build
-OUTPUT_DIR = ../docs
+OUTPUT_DIR = _build
 DEFAULT_BUILDERS = html
 
 
