@@ -41,6 +41,7 @@ release = "0.0.1"
 language = "en"
 
 homepage = "https://github.com/LucasAVasco/gtk_simple_loader"
+repository_tree_page = "https://github.com/LucasAVasco/gtk_simple_loader/tree/main"
 
 # #endregion
 
@@ -98,7 +99,8 @@ autodoc_default_options = {
 autodoc_typehints = "both"
 
 autosummary_context = {
-    "project_web_link": homepage,
+    "project_homepage": homepage,
+    "project_tree_page": repository_tree_page,
 }
 
 intersphinx_mapping = {

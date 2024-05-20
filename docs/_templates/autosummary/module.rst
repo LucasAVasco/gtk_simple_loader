@@ -29,13 +29,13 @@
 {% if not modules %}
 
 {# Add a link to the module file  #}
-:code: `{{ name }}.py <{{project_web_link}}/{{ fullname | replace('.','/') }}.py>`_
+:code: `{{ name }}.py <{{project_tree_page}}/{{ fullname | replace('.','/') }}.py>`_
 
 {# If is a package with some modules #}
 {% else %}
 
 {# Add a link to the module folder #}
-:folder: `{{ name }} <{{project_web_link}}/{{ fullname | replace('.','/') }}>`_
+:folder: `{{ name }} <{{project_tree_page}}/{{ fullname | replace('.','/') }}>`_
 
 {% endif %}
 
