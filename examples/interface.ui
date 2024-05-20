@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.90.2 -->
+<interface>
+  <!-- interface-name interface.ui -->
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkWindow" id="main_window">
+    <property name="name">main_window</property>
+    <signal name="close-request" handler="on_close_request_handler"/>
+    <child>
+      <object class="GtkBox" id="box_1">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkEntry" id="entry_1">
+            <property name="placeholder-text">entry 1</property>
+            <property name="primary-icon-activatable">False</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkScale" id="scale_1">
+            <property name="adjustment">
+              <object class="GtkAdjustment">
+                <property name="page-increment">1.0</property>
+                <property name="upper">10.0</property>
+              </object>
+            </property>
+            <signal name="change-value" handler="on_scale_changed_handler"/>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <child>
+              <object class="GtkButton" id="button_1">
+                <property name="label">btn 1</property>
+                <signal name="clicked" handler="on_btn1_clicked_handler"/>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSwitch" id="switch_1">
+                <signal name="state-set" handler="on_switch_set_handler"/>
+              </object>
+            </child>
+            <child>
+              <object class="GtkToggleButton" id="button_2">
+                <property name="label">btn 2</property>
+                <signal name="toggled" handler="on_btn2_toggle_handler"/>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

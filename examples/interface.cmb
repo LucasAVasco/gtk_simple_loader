@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.17.3" target_tk="gtk-4.0">
+  <ui>
+	(1,None,"interface.ui","interface.ui",None,None,None,None,None,None,None)
+  </ui>
+  <ui_library>
+	(1,"gtk","4.0",None)
+  </ui_library>
+  <object>
+	(1,1,"GtkWindow","main_window",None,None,None,None,-1,None,None),
+	(1,2,"GtkBox","box_1",1,None,None,None,-1,None,None),
+	(1,3,"GtkBox",None,2,None,None,None,2,None,None),
+	(1,4,"GtkButton","button_1",3,None,None,None,None,None,None),
+	(1,5,"GtkEntry","entry_1",2,None,None,None,None,None,None),
+	(1,6,"GtkScale","scale_1",2,None,None,None,1,None,None),
+	(1,7,"GtkSwitch","switch_1",3,None,None,None,1,None,None),
+	(1,8,"GtkToggleButton","button_2",3,None,None,None,2,None,None),
+	(1,9,"GtkAdjustment",None,6,None,None,None,-1,None,None)
+  </object>
+  <object_property>
+	(1,1,"GtkWidget","name","main_window",None,None,None,None,None,None,None,None,None),
+	(1,2,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,4,"GtkButton","label","btn 1",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkEntry","placeholder-text","entry 1",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkEntry","primary-icon-activatable","False",None,None,None,None,None,None,None,None,None),
+	(1,6,"GtkRange","adjustment",None,None,None,None,None,9,None,None,None,None),
+	(1,8,"GtkButton","label","btn 2",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkAdjustment","page-increment","1.0",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkAdjustment","upper","10.0",None,None,None,None,None,None,None,None,None)
+  </object_property>
+  <object_signal>
+	(3,1,1,"GtkWindow","close-request","on_close_request_handler",None,None,None,None,None),
+	(5,1,8,"GtkToggleButton","toggled","on_btn2_toggle_handler",None,None,None,None,None),
+	(8,1,7,"GtkSwitch","state-set","on_switch_set_handler",None,None,None,None,None),
+	(9,1,4,"GtkButton","clicked","on_btn1_clicked_handler",None,None,None,None,None),
+	(11,1,6,"GtkRange","change-value","on_scale_changed_handler",None,None,None,None,None)
+  </object_signal>
+</cambalache-project>
