@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.90.2 -->
+<interface>
+  <!-- interface-name interface.ui -->
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkWindow">
+    <child>
+      <object class="GtkBox">
+        <property name="homogeneous">True</property>
+        <property name="orientation">vertical</property>
+        <property name="vexpand">True</property>
+        <child>
+          <object class="GtkButton" id="button">
+            <property name="label">Button 1</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkColorButton" id="color_button"/>
+        </child>
+        <child>
+          <object class="GtkCenterBox">
+            <child type="center">
+              <object class="GtkSwitch" id="switch">
+                <property name="width-request">150</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
